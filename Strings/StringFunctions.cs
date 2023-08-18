@@ -12,24 +12,59 @@ namespace CSharpRecoverMaterial.Strings
         // String functions are most powerful thing about string in coding
         // Note ! All the string functions called by the name of string var and dot like Name.function()
 
-        // String Length
-        // Name.Length | will return the amount of chars in the string
+        /*
+            Append(string): Adds a string to the current string.
 
-        // ! Clone()
-        // Make clone of string.
+            AppendLine(string): Adds a string to the current string, with a new line at the end.
 
-        // CompareTo(string)
-        // Compare two strings and returns integer value as output. It returns 0 for true and 1 for false.
+            Clear(): Clears the string.
 
-        // Contains(char / string)
-        // The C# Contains method checks whether specified character or string is exists or not in the string value.
-        // Can use also char and string as args
+            Contains(string / char): Determines whether the current string contains the specified string.
 
-        // ! EndsWith(char)
-        // This EndsWith Method checks whether specified character is the last character of string or not.
+            CopyTo(char[], int, int): Copies the current string to a char array.
 
-        // Equals(string)
-        // The Equals Method in C# compares two string and returns Boolean value as output.
+            EndsWith(string): Determines whether the current string ends with the specified string.
+
+            Equals(object): Determines whether the current string is equal to the specified object.
+
+            Equals(string, StringComparison): Determines whether the current string is equal to the specified string, according to the specified comparison method.
+
+            Format(string, object[]): Formats a string with the specified parameters.
+
+            IndexOf(char): Gets the index of the first occurrence of the specified character in the current string.
+
+            IndexOf(char, int): Gets the index of the first occurrence of the specified character in the current string, starting at the specified index.
+
+            IndexOf(string): Gets the index of the first occurrence of the specified string in the current string.
+
+            IndexOf(string, int): Gets the index of the first occurrence of the specified string in the current string, starting at the specified index.
+
+            Insert(int, string): Inserts the specified string into the current string, at the specified index.
+
+            Length : Gets the length of the string.
+
+            Remove(int, int): Removes a substring from the current string, starting at the specified index.
+
+            Replace(char, char): Replaces all occurrences of the specified character in the current string with the specified character.
+
+            Replace(string, string): Replaces all occurrences of the specified string in the current string with the specified string.
+
+            Split(string): Splits the current string into an array of strings, using the specified string as the delimiter.
+
+            Substring(int): Gets a substring from the current string, starting at the specified index.
+
+            Substring(int, int): Gets a substring from the current string, starting at the specified index and ending at the specified index.
+
+            ToLower(): Converts all characters in the current string to lowercase.
+
+            ToUpper(): Converts all characters in the current string to uppercase.
+
+            Trim(): Removes all leading and trailing whitespace from the current string.
+
+            TrimEnd(char[]): Removes all specified characters from the end of the current string.
+
+            TrimStart(char[]): Removes all specified characters from the beginning of the current string.
+        */
 
         void Examples()
         {
@@ -55,7 +90,7 @@ namespace CSharpRecoverMaterial.Strings
             Console.WriteLine(firstname.Equals(lastname)); // : False
 
             //Returns HashCode of String
-            Console.WriteLine(firstname.GetHashCode()); // : 1470518261
+            // ! Console.WriteLine(firstname.GetHashCode()); // : 1470518261
 
             //Returns type of string
             Console.WriteLine(firstname.GetType()); // : System.String
@@ -76,7 +111,7 @@ namespace CSharpRecoverMaterial.Strings
             Console.WriteLine(firstname.Insert(0, "Hello")); // : HelloSteven Clark
 
             //Check Whether string is in Unicode normalization from C
-            Console.WriteLine(firstname.IsNormalized()); // : True
+            // ! Console.WriteLine(firstname.IsNormalized()); // : True
 
             //Returns the last index position of specified value
             Console.WriteLine(firstname.LastIndexOf("e")); // : 4
