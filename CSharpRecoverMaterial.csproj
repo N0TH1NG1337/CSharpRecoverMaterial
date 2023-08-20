@@ -47,6 +47,7 @@
     <Compile Include="Classes And Objects\Default Classes.cs" />
     <Compile Include="Loops\ForLoops.cs" />
     <Compile Include="Loops\WhileLoops.cs" />
+    <Compile Include="New Things.cs" />
     <Compile Include="Optimization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
